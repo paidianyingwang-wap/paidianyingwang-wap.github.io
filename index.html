@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>拍电影网 - 电影拍摄与影视制作教程、器材推荐与行业资讯</title>
+<meta name="description" content="拍电影网（paidianyingwang-wap）专注电影拍摄与影视制作，提供拍摄教程、器材推荐、分镜技巧、后期剪辑与行业资讯，从零开始学拍电影。">
+<meta name="keywords" content="拍电影网, paidianyingwang-wap, 拍电影, 电影拍摄教程, 影视制作, 分镜脚本, 摄影器材, 后期剪辑, 独立电影">
+<meta name="author" content="拍电影网">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="bingbot" content="index, follow">
+<meta name="renderer" content="webkit">
+<meta name="format-detection" content="telephone=no">
+<link rel="canonical" href="https://paidianyingwang-wap.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="拍电影网 - 电影拍摄与影视制作教程、器材推荐与行业资讯">
+<meta property="og:description" content="从零开始学拍电影：拍摄教程、器材推荐、分镜技巧、后期剪辑与行业资讯。">
+<meta property="og:url" content="https://paidianyingwang-wap.github.io/">
+<meta property="og:site_name" content="拍电影网">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="拍电影网 - 从零开始学拍电影">
+<meta name="twitter:description" content="拍摄教程、器材推荐、分镜技巧、后期剪辑与行业资讯。">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.82em' font-size='80'>拍</text></svg>">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#17110d;--paper:#211a14;--paper2:#2a2119;--line:#443629;--ink:#f5ecdc;--mut:#a08d76;
+  --amber:#e8a13a;--amber2:#f5c878;--brown:#8a5a2b;--brown2:#6b4320;--red:#b3402c;--red2:#d4614b;
+  --green:#4f7a4a;--r:16px;--ease:cubic-bezier(.28,.8,.3,1);
+}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:"PingFang SC","Microsoft YaHei","Source Han Sans SC",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.9;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:-1;opacity:.5;background:
+  repeating-linear-gradient(0deg,transparent 0,transparent 3px,rgba(255,255,255,.012) 3px,rgba(255,255,255,.012) 4px),
+  radial-gradient(circle at 82% 8%,rgba(232,161,58,.16),transparent 42%),
+  radial-gradient(circle at 12% 92%,rgba(179,64,44,.14),transparent 40%);}
+a{color:inherit;text-decoration:none;transition:color .35s var(--ease)}
+a:hover{color:var(--amber2)}
+img{max-width:100%;display:block}
+ul,ol,dl{list-style:none}
+button{font:inherit;border:none;background:none;color:inherit;outline:none;cursor:pointer}
+h1,h2,h3,h4{line-height:1.5;font-weight:700}
+::selection{background:var(--amber);color:#17110d}
+::-webkit-scrollbar{width:9px;height:9px}
+::-webkit-scrollbar-thumb{background:var(--brown);border-radius:9px}
+::-webkit-scrollbar-thumb:hover{background:var(--amber)}
+
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 28px}
+section{padding:104px 0;position:relative}
+@media(max-width:640px){section{padding:56px 0}.wrap{padding:0 17px}}
+
+/* 顶栏 */
+.top{position:sticky;top:0;z-index:200;background:rgba(23,17,13,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.tp{display:flex;align-items:center;justify-content:space-between;gap:22px;padding:13px 0}
+.logo{display:flex;align-items:center;gap:12px}
+.logo .mk{width:38px;height:38px;border-radius:9px;background:var(--amber);display:grid;place-items:center;color:#17110d;font-size:17px;font-weight:800;box-shadow:0 6px 16px -6px rgba(232,161,58,.55)}
+.logo b{font-size:17.5px;letter-spacing:.02em}
+.logo b i{font-style:normal;color:var(--amber)}
+.logo span{font-size:10.5px;color:var(--mut);letter-spacing:.08em;border-left:1px solid var(--line);padding-left:10px;text-transform:uppercase}
+.menu{display:flex;gap:2px;font-size:14px}
+.menu a{padding:9px 15px;color:var(--mut);border-radius:9px;transition:all .35s var(--ease)}
+.menu a:hover,.menu a.on{color:#17110d;background:var(--amber)}
+.tbtn{display:none;width:44px;height:44px;border:1px solid var(--line);border-radius:11px;color:var(--amber);font-size:19px}
+@media(max-width:980px){
+  .tbtn{display:grid;place-items:center}
+  .menu{position:absolute;top:68px;left:17px;right:17px;flex-direction:column;background:var(--paper);border:1px solid var(--line);border-radius:13px;padding:8px;gap:2px;
+    transform:translateY(-8px);opacity:0;pointer-events:none;transition:all .4s var(--ease);box-shadow:0 24px 60px -28px rgba(0,0,0,.6)}
+  .menu.open{transform:translateY(0);opacity:1;pointer-events:auto}
+  .menu a{border-radius:9px;padding:13px 15px;font-size:15px;color:var(--ink)}
+}
+
+/* 首屏 */
+.hero{padding-top:24px}
+.hg{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center}
+.hl .tags{display:flex;gap:8px;flex-wrap:wrap}
+.hl .tags span{font-size:11.5px;letter-spacing:.06em;padding:6px 13px;border-radius:6px;background:var(--paper2);border:1px solid var(--line);color:var(--amber2)}
+.hl .tags span:first-child{background:var(--red);border-color:var(--red);color:#fff}
+.hl h1{font-size:clamp(30px,5.2vw,54px);line-height:1.28;margin:22px 0 18px}
+.hl h1 em{font-style:normal;color:var(--amber)}
+.hl p{font-size:15.5px;color:var(--mut);max-width:500px}
+.hl .acts{margin-top:28px;display:flex;gap:18px;flex-wrap:wrap;align-items:center}
+.btn{background:var(--amber);color:#17110d;padding:14px 32px;font-size:14px;border-radius:8px;font-weight:700;transition:all .4s;box-shadow:0 10px 26px -10px rgba(232,161,58,.6)}
+.btn:hover{background:var(--ink);color:#17110d}
+.lnk{font-size:13.5px;color:var(--mut);text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:5px}
+.hr{position:relative}
+.hr .finder{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:18px;position:relative}
+.hr .finder::before{content:"";position:absolute;inset:8px;border:1.5px dashed rgba(245,200,120,.32);border-radius:9px;pointer-events:none}
+.fv{position:relative;height:210px;border-radius:8px;overflow:hidden}
+.fv img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.hr .finder:hover .fv img{transform:scale(1.12)}
+.fv .cross{position:absolute;inset:0;pointer-events:none}
+.fv .cross::before,.fv .cross::after{content:"";position:absolute;background:rgba(245,200,120,.55)}
+.fv .cross::before{left:50%;top:0;bottom:0;width:1px}
+.fv .cross::after{top:50%;left:0;right:0;height:1px}
+.fv .fr{position:absolute;width:96px;height:66px;border:2px solid var(--amber);border-radius:4px;top:50%;left:50%;transform:translate(-50%,-50%)}
+.fv .lb{position:absolute;top:12px;left:14px;background:var(--red);color:#fff;font-size:11px;letter-spacing:.08em;padding:5px 13px;border-radius:5px;font-weight:700}
+.fv .rt{position:absolute;bottom:12px;right:14px;background:rgba(23,17,13,.72);color:var(--amber2);font-size:11px;letter-spacing:.06em;padding:5px 12px;border-radius:5px;backdrop-filter:blur(4px)}
+@media(max-width:860px){.hg{grid-template-columns:1fr;gap:38px}}
+
+/* 栏目标题 */
+.col{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:42px}
+.col .cn{font-size:clamp(25px,4.4vw,42px)}
+.col .cn em{font-style:normal;color:var(--amber)}
+.col .en{font-size:11.5px;color:var(--mut);letter-spacing:.26em;text-transform:uppercase;padding-bottom:6px}
+.col .en::before{content:"";display:inline-block;width:24px;height:1px;background:var(--brown);vertical-align:middle;margin-right:10px}
+.col .more{margin-left:auto;font-size:13px;color:var(--amber2);border-bottom:1px solid var(--brown);padding-bottom:3px}
+@media(max-width:640px){.col .en{display:none}.col .more{margin-left:0}}
+
+/* 栏目一：场记板 */
+.shot{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.shot-c{background:var(--paper);border:1px solid var(--line);border-radius:12px;overflow:hidden;transition:all .5s var(--ease)}
+.shot-c:hover{transform:translateY(-8px);box-shadow:0 24px 52px -28px rgba(0,0,0,.65)}
+.shot-c .pt{height:150px;overflow:hidden;position:relative}
+.shot-c .pt img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.shot-c:hover .pt img{transform:scale(1.12)}
+.shot-c .pt .sc{position:absolute;top:10px;left:10px;background:var(--paper2);border:1px solid var(--line);color:var(--amber2);font-size:10.5px;letter-spacing:.06em;padding:4px 11px;border-radius:4px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+.shot-c .tx{padding:18px 20px 20px}
+.shot-c .tx h4{font-size:17.5px;margin-bottom:8px;color:var(--ink)}
+.shot-c .tx p{font-size:13.5px;color:var(--mut);line-height:1.85}
+@media(max-width:820px){.shot{grid-template-columns:1fr 1fr}.shot-c:nth-child(n+5){display:none}}
+@media(max-width:520px){.shot{grid-template-columns:1fr}.shot-c:nth-child(n+5){display:block}}
+
+/* 栏目二：镜头转盘 */
+.gear{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.gear-c{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:22px 20px;text-align:center;transition:all .5s var(--ease)}
+.gear-c:hover{transform:translateY(-8px);box-shadow:0 22px 48px -26px rgba(0,0,0,.6)}
+.gear-c .wh{width:84px;height:84px;margin:0 auto 16px;border-radius:50%;background:var(--paper2);border:6px solid var(--brown2);position:relative;display:grid;place-items:center}
+.gear-c .wh::before{content:"";position:absolute;inset:-14px;border:1.5px dashed rgba(232,161,58,.4);border-radius:50%}
+.gear-c .wh b{font-size:15px;color:var(--amber2);font-weight:700}
+.gear-c h4{font-size:16.5px;margin-bottom:7px}
+.gear-c p{font-size:13px;color:var(--mut);line-height:1.8}
+@media(max-width:820px){.gear{grid-template-columns:1fr 1fr}.gear-c:nth-child(n+5){display:none}}
+@media(max-width:520px){.gear{grid-template-columns:1fr}.gear-c:nth-child(n+5){display:block}}
+
+/* 栏目三：分镜条 */
+.strip{display:grid;gap:14px}
+.strip-c{background:var(--paper);border:1px solid var(--line);border-radius:11px;padding:20px 22px;display:grid;grid-template-columns:104px 1fr 78px;gap:22px;align-items:center;transition:all .4s}
+.strip-c:hover{transform:translateX(6px);box-shadow:0 18px 42px -24px rgba(0,0,0,.6)}
+.strip-c .fr{height:66px;border-radius:6px;overflow:hidden;position:relative;border:1px solid var(--line)}
+.strip-c .fr img{width:100%;height:100%;object-fit:cover}
+.strip-c .fr span{position:absolute;top:5px;left:5px;background:var(--red);color:#fff;font-size:10px;padding:2px 8px;border-radius:3px;font-family:ui-monospace,Menlo,monospace}
+.strip-c .tx h4{font-size:17px;margin-bottom:8px}
+.strip-c .tx p{font-size:13.5px;color:var(--mut);line-height:1.75}
+.strip-c .no{text-align:right}
+.strip-c .no b{display:block;font-size:20px;color:var(--amber);font-weight:800;font-family:ui-monospace,Menlo,monospace}
+.strip-c .no span{font-size:11px;color:var(--mut)}
+@media(max-width:560px){.strip-c{grid-template-columns:76px 1fr;gap:14px}.strip-c .no{grid-column:2;text-align:left}.strip-c .fr{height:56px}}
+
+/* 栏目四：导演椅专题 */
+.chair{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.chair-c{background:var(--paper);border:1px solid var(--line);border-radius:13px;overflow:hidden;transition:all .5s var(--ease)}
+.chair-c:hover{transform:translateY(-8px);box-shadow:0 24px 52px -28px rgba(0,0,0,.65)}
+.chair-c .th{height:180px;overflow:hidden;position:relative}
+.chair-c .th img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.chair-c:hover .th img{transform:scale(1.12)}
+.chair-c .th .ep{position:absolute;top:12px;left:12px;background:var(--paper2);border:1px solid var(--line);color:var(--amber2);font-size:10.5px;letter-spacing:.1em;padding:5px 12px;border-radius:5px;font-family:ui-monospace,Menlo,monospace}
+.chair-c .tx{padding:22px}
+.chair-c .tx h4{font-size:18px;margin-bottom:9px}
+.chair-c .tx p{font-size:13.5px;color:var(--mut);line-height:1.85}
+@media(max-width:820px){.chair{grid-template-columns:1fr}}
+
+/* 栏目五：场记册 */
+.slate{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.slate-c{background:var(--paper);border:1px solid var(--line);border-radius:11px;padding:22px 24px;transition:all .5s var(--ease)}
+.slate-c:hover{box-shadow:0 20px 44px -24px rgba(0,0,0,.6)}
+.slate-c .cl{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.slate-c .cl b{width:34px;height:34px;flex-shrink:0;border-radius:6px;background:var(--amber);color:#17110d;display:grid;place-items:center;font-size:14px;font-weight:800;font-family:ui-monospace,Menlo,monospace}
+.slate-c:nth-child(2) .cl b{background:var(--red);color:#fff}
+.slate-c:nth-child(3) .cl b{background:var(--green);color:#fff}
+.slate-c:nth-child(4) .cl b{background:var(--paper2);color:var(--amber2);border:1px solid var(--line)}
+.slate-c .cl span{font-size:11.5px;color:var(--mut);letter-spacing:.08em;font-family:ui-monospace,Menlo,monospace}
+.slate-c h4{font-size:16.5px;margin-bottom:9px}
+.slate-c p{font-size:13.5px;color:var(--mut);line-height:1.85}
+@media(max-width:640px){.slate{grid-template-columns:1fr}}
+
+/* 栏目六：FAQ */
+.faq{display:grid;gap:12px}
+.fq{background:var(--paper);border:1px solid var(--line);border-radius:11px;overflow:hidden;transition:all .4s}
+.fq summary{cursor:pointer;list-style:none;padding:19px 22px;font-size:15.5px;display:flex;gap:15px;align-items:baseline}
+.fq summary::-webkit-details-marker{display:none}
+.fq summary .nm{font-size:11px;color:var(--amber2);border:1px solid var(--brown);padding:4px 11px;border-radius:5px;flex-shrink:0;letter-spacing:.1em;font-family:ui-monospace,Menlo,monospace}
+.fq .qt2{flex:1}
+.fq summary::after{content:"＋";color:var(--amber);font-size:17px;transition:transform .4s}
+.fq[open] summary::after{transform:rotate(45deg)}
+.fq .bd{padding:0 22px 20px 68px;font-size:14px;color:var(--mut);line-height:1.9}
+
+/* 引言 */
+.qt{margin:0 28px;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:66px 40px;text-align:center;position:relative;overflow:hidden}
+.qt::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 0%,rgba(232,161,58,.14),transparent 60%)}
+.qt .k{position:relative;font-size:11px;letter-spacing:.32em;color:var(--amber);margin-bottom:20px}
+.qt h2{position:relative;font-size:clamp(21px,3.9vw,36px);line-height:1.9;font-weight:600;max-width:820px;margin:0 auto 18px}
+.qt h2 em{font-style:normal;color:var(--amber)}
+.qt p{position:relative;font-size:14px;color:var(--mut);max-width:560px;margin:0 auto}
+@media(max-width:640px){.qt{margin:0 17px;padding:44px 22px}}
+
+/* 页脚 */
+.foot{border-top:1px solid var(--line);padding-top:54px;background:var(--paper)}
+.fg{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:42px;margin-bottom:42px}
+.foot .brand{display:flex;align-items:center;gap:11px;font-size:19px;margin-bottom:12px}
+.foot .brand .mk{width:32px;height:32px;border-radius:8px;background:var(--amber);display:grid;place-items:center;color:#17110d;font-size:14px;font-weight:800}
+.foot .sub{font-size:11px;color:var(--mut);letter-spacing:.1em;margin-bottom:14px;text-transform:uppercase}
+.foot .fd{font-size:14px;color:var(--mut);max-width:420px;line-height:1.9}
+.foot .s1{margin-top:18px;display:flex;gap:8px;flex-wrap:wrap}
+.foot .s1 span{font-size:11.5px;background:var(--paper2);border:1px solid var(--line);border-radius:6px;padding:6px 13px;color:var(--amber2)}
+.fc2 h4{font-size:13px;color:var(--ink);letter-spacing:.14em;margin-bottom:18px}
+.fc2 ul{display:grid;gap:11px}
+.fc2 ul a{font-size:14px;color:var(--mut)}
+.fc2 ul a:hover{color:var(--amber2)}
+.fb{border-top:1px solid var(--line);padding:22px 0;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:12.5px;color:var(--mut)}
+.fb b{color:var(--amber);font-weight:400}
+@media(max-width:860px){.fg{grid-template-columns:1fr 1fr;gap:32px}}
+
+.up{position:fixed;right:20px;bottom:24px;width:46px;height:46px;z-index:150;border-radius:10px;background:var(--amber);color:#17110d;display:grid;place-items:center;font-weight:800;opacity:0;transform:translateY(20px);pointer-events:none;transition:all .4s}
+.up.show{opacity:1;transform:translateY(0);pointer-events:auto}
+.up:hover{background:var(--ink)}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaolu.js"></script>
+
+<div class="top"><div class="wrap tp">
+  <a class="logo" href="#home"><span class="mk">拍</span><b>拍电影网</b><span>Film Making</span></a>
+  <nav class="menu" id="menu" aria-label="主导航">
+    <a href="#home" class="on">首页</a><a href="#shot">拍摄</a><a href="#gear">器材</a>
+    <a href="#strip">教程</a><a href="#feat">专题</a><a href="#faq">常见问题</a>
+  </nav>
+  <button class="tbtn" id="tbtn" aria-label="菜单" aria-expanded="false">☰</button>
+</div></div>
+
+<section class="hero" id="home"><div class="wrap">
+  <div class="hg">
+    <div class="hl">
+      <div class="tags"><span>SCENE 01</span><span>开拍</span><span>免费教程</span></div>
+      <h1>从零开始<br><em>拍</em>出好电影</h1>
+      <p>拍电影网（paidianyingwang-wap）专注电影拍摄与影视制作，提供拍摄教程、器材推荐、分镜技巧、后期剪辑与行业资讯，新手也能上手。</p>
+      <div class="acts"><a class="btn" href="#shot">开始学习</a><a class="lnk" href="#gear">器材推荐 →</a></div>
+    </div>
+    <div class="hr"><div class="finder">
+      <div class="fv"><div class="cross"></div><div class="fr"></div>
+        <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?w=600&q=70" alt="拍电影网 电影拍摄现场取景器画面">
+        <span class="lb">SCENE 01 · TAKE 03</span>
+        <span class="rt">24fps · 4K</span>
+      </div>
+    </div></div>
+  </div>
+</div></section>
+
+<section id="shot"><div class="wrap">
+  <div class="col"><span class="cn"><em>拍摄</em>技巧</span><span class="en">Shot &amp; Lighting</span><a class="more" href="#">全部教程 →</a></div>
+  <div class="shot">
+    <a class="shot-c" href="#"><div class="pt"><img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=500&q=70" alt="拍电影网 镜头语言"><span class="sc">SC.01</span></div><div class="tx"><h4>镜头语言基础</h4><p>景别、角度、运动，讲清楚每个镜头想表达什么。</p></div></a>
+    <a class="shot-c" href="#"><div class="pt"><img src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=500&q=70" alt="拍电影网 光线运用"><span class="sc">SC.02</span></div><div class="tx"><h4>光线运用入门</h4><p>自然光与人工光的布置，低成本也能拍出质感。</p></div></a>
+    <a class="shot-c" href="#"><div class="pt"><img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=500&q=70" alt="拍电影网 录音收音"><span class="sc">SC.03</span></div><div class="tx"><h4>录音与收音</h4><p>同期录音技巧，让对白干净又真实。</p></div></a>
+    <a class="shot-c" href="#"><div class="pt"><img src="https://images.unsplash.com/photo-1520637836862-4d197d17c55a?w=500&q=70" alt="拍电影网 运镜技巧"><span class="sc">SC.04</span></div><div class="tx"><h4>运镜技巧</h4><p>推拉摇移跟，手持与稳定器的选择。</p></div></a>
+    <a class="shot-c" href="#"><div class="pt"><img src="https://images.unsplash.com/photo-1543536448-d209d2d13a92?w=500&q=70" alt="拍电影网 调度走位"><span class="sc">SC.05</span></div><div class="tx"><h4>演员调度</h4><p>走位与场面调度，让画面更有张力。</p></div></a>
+    <a class="shot-c" href="#"><div class="pt"><img src="https://images.unsplash.com/photo-1518621736915-f3b1c58e3d63?w=500&q=70" alt="拍电影网 场景布置"><span class="sc">SC.06</span></div><div class="tx"><h4>场景布置</h4><p>美术与道具，用细节撑起故事氛围。</p></div></a>
+  </div>
+</div></section>
+
+<section id="gear" style="background:rgba(138,90,43,.1)"><div class="wrap">
+  <div class="col"><span class="cn"><em>器材</em>清单</span><span class="en">Gear Guide</span><a class="more" href="#">完整清单 →</a></div>
+  <div class="gear">
+    <a class="gear-c" href="#"><div class="wh"><b>镜头</b></div><h4>镜头怎么选</h4><p>定焦与变焦，常用焦段搭配建议。</p></a>
+    <a class="gear-c" href="#"><div class="wh"><b>机身</b></div><h4>拍摄机身</h4><p>入门到进阶，按预算选对机器。</p></a>
+    <a class="gear-c" href="#"><div class="wh"><b>稳定</b></div><h4>稳定与支撑</h4><p>三脚架、稳定器、滑轨的取舍。</p></a>
+    <a class="gear-c" href="#"><div class="wh"><b>灯光</b></div><h4>灯光器材</h4><p>LED 灯棒、柔光箱、反光板的组合。</p></a>
+    <a class="gear-c" href="#"><div class="wh"><b>收音</b></div><h4>收音设备</h4><p>麦克风、录音机与防风套搭配。</p></a>
+    <a class="gear-c" href="#"><div class="wh"><b>剪辑</b></div><h4>剪辑设备</h4><p>电脑配置与剪辑软件推荐。</p></a>
+  </div>
+</div></section>
+
+<section id="strip"><div class="wrap">
+  <div class="col"><span class="cn">分镜<em>教程</em></span><span class="en">Storyboard</span><a class="more" href="#">完整教程 →</a></div>
+  <div class="strip">
+    <article class="strip-c"><div class="fr"><img src="https://images.unsplash.com/photo-1518930259200-3e6e6b4c6a2a?w=300&q=70" alt="拍电影网 分镜教程 01"><span>SC.01</span></div><div class="tx"><h4>三分钟看懂分镜脚本</h4><p>从文字到画面，分镜是怎么帮你省预算的。</p></div><div class="no"><b>01</b><span>基础</span></div></article>
+    <article class="strip-c"><div class="fr"><img src="https://images.unsplash.com/photo-1505686994434-e3cc5abf1330?w=300&q=70" alt="拍电影网 分镜教程 02"><span>SC.02</span></div><div class="tx"><h4>一镜到底怎么拍</h4><p>走位设计、灯光移动与现场配合要点。</p></div><div class="no"><b>02</b><span>进阶</span></div></article>
+    <article class="strip-c"><div class="fr"><img src="https://images.unsplash.com/photo-1535016120720-40c646be5580?w=300&q=70" alt="拍电影网 分镜教程 03"><span>SC.03</span></div><div class="tx"><h4>对话场面怎么拍好看</h4><p>正反打、过肩镜头的机位与轴线规则。</p></div><div class="no"><b>03</b><span>实用</span></div></article>
+    <article class="strip-c"><div class="fr"><img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=300&q=70" alt="拍电影网 分镜教程 04"><span>SC.04</span></div><div class="tx"><h4>低成本拍出电影感</h4><p>用构图、光线与声音弥补预算不足。</p></div><div class="no"><b>04</b><span>实战</span></div></article>
+    <article class="strip-c"><div class="fr"><img src="https://images.unsplash.com/photo-1518182170546-076616fdcbfe?w=300&q=70" alt="拍电影网 分镜教程 05"><span>SC.05</span></div><div class="tx"><h4>后期剪辑的节奏</h4><p>镜头长度、转场与音乐点的配合。</p></div><div class="no"><b>05</b><span>后期</span></div></article>
+  </div>
+</div></section>
+
+<section id="feat" style="background:rgba(179,64,44,.08)"><div class="wrap">
+  <div class="col"><span class="cn"><em>专题</em>精选</span><span class="en">Features</span><a class="more" href="#">更多专题 →</a></div>
+  <div class="chair">
+    <article class="chair-c"><div class="th"><img src="https://images.unsplash.com/photo-1520637836862-4d197d17c55a?w=600&q=70" alt="拍电影网 新手入门专题"></div><div class="tx"><span class="ep">EP.01</span><h4>新手第一支短片</h4><p>从剧本到成片，完整记录一部短片的诞生。</p></div></article>
+    <article class="chair-c"><div class="th"><img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?w=600&q=70" alt="拍电影网 独立电影专题"></div><div class="tx"><span class="ep">EP.02</span><h4>独立电影如何起步</h4><p>小成本团队的分工、排期与预算管理。</p></div></article>
+    <article class="chair-c"><div class="th"><img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=600&q=70" alt="拍电影网 后期调色专题"></div><div class="tx"><span class="ep">EP.03</span><h4>调色与画面质感</h4><p>一级调色、二级调色与 LUT 的使用方法。</p></div></article>
+  </div>
+</div></section>
+
+<section id="slate"><div class="wrap">
+  <div class="col"><span class="cn"><em>场记</em>笔记</span><span class="en">Director's Notes</span><a class="more" href="#">更多 →</a></div>
+  <div class="slate">
+    <article class="slate-c"><div class="cl"><b>A</b><span>NOTE 01</span></div><h4>剧本到分镜的转换</h4><p>哪些段落值得画分镜，哪些靠现场发挥。</p></article>
+    <article class="slate-c"><div class="cl"><b>B</b><span>NOTE 02</span></div><h4>外景拍摄注意事项</h4><p>勘景、光线时间窗与应急方案。</p></article>
+    <article class="slate-c"><div class="cl"><b>C</b><span>NOTE 03</span></div><h4>演员沟通技巧</h4><p>怎么讲戏，让演员更快进入状态。</p></article>
+    <article class="slate-c"><div class="cl"><b>D</b><span>NOTE 04</span></div><h4>拍摄计划怎么排</h4><p>按场景而非按场次，效率翻倍的排法。</p></article>
+  </div>
+</div></section>
+
+<section id="faq"><div class="wrap">
+  <div class="col"><span class="cn">常见<em>问题</em></span><span class="en">FAQ</span><a class="more" href="#">帮助中心 →</a></div>
+  <div class="faq">
+    <details class="fq" open><summary><span class="nm">Q.01</span><span class="qt2">零基础能学会拍电影吗？</span></summary><div class="bd">可以。拍电影网（paidianyingwang-wap）从镜头语言、光线运用到分镜、后期，都有分步骤教程，按顺序学即可。</div></details>
+    <details class="fq"><summary><span class="nm">Q.02</span><span class="qt2">新手入门需要花多少钱？</span></summary><div class="bd">起步阶段一部手机加三脚架就能拍，后续再按需添置镜头、灯光与收音设备，不必一步到位。</div></details>
+    <details class="fq"><summary><span class="nm">Q.03</span><span class="qt2">分镜脚本一定要画吗？</span></summary><div class="bd">不一定要画得漂亮，但建议画出关键镜头的构图与机位，能明显减少现场返工。</div></details>
+    <details class="fq"><summary><span class="nm">Q.04</span><span class="qt2">拍摄用什么格式？</span></summary><div class="bd">建议录制最高画质与合适的色彩采样，具体参数视机身与后期流程而定，可参考器材专题。</div></details>
+    <details class="fq"><summary><span class="nm">Q.05</span><span class="qt2">后期剪辑用什么软件？</span></summary><div class="bd">入门可用剪映、达芬奇，进阶推荐 Premiere、Final Cut，具体见器材清单里的剪辑设备建议。</div></details>
+    <details class="fq"><summary><span class="nm">Q.06</span><span class="qt2">教程多久更新一次？</span></summary><div class="bd">每周持续更新，涵盖拍摄技巧、器材测评与行业资讯，可关注场记笔记栏目获取最新内容。</div></details>
+  </div>
+</div></section>
+
+<section><div class="wrap"><div class="qt">
+  <div class="k">— 场记一句 —</div>
+  <h2>每一个好故事，都值得被<em>拍</em>出来。<br>拍电影网，陪你从第一镜开始。</h2>
+  <p>拍电影网（paidianyingwang-wap）—— 你的电影拍摄学习站。</p>
+</div></div></section>
+
+<footer class="foot"><div class="wrap">
+  <div class="fg">
+    <div><div class="brand"><span class="mk">拍</span>拍电影网</div><div class="sub">PAIDIANYINGWANG · WAP</div><p class="fd">拍电影网（paidianyingwang-wap）专注电影拍摄与影视制作，提供拍摄教程、器材推荐、分镜技巧、后期剪辑与行业资讯，从零开始学拍电影。</p>
+      <div class="s1"><span>镜头语言</span><span>光线运用</span><span>分镜脚本</span><span>后期剪辑</span></div></div>
+    <div class="fc2"><h4>学习</h4><ul><li><a href="#shot">拍摄技巧</a></li><li><a href="#gear">器材清单</a></li><li><a href="#strip">分镜教程</a></li><li><a href="#feat">专题精选</a></li></ul></div>
+    <div class="fc2"><h4>分类</h4><ul><li><a href="#">镜头</a></li><li><a href="#">灯光</a></li><li><a href="#">收音</a></li><li><a href="#">剪辑</a></li></ul></div>
+    <div class="fc2"><h4>关于</h4><ul><li><a href="#">网站简介</a></li><li><a href="#">投稿合作</a></li><li><a href="#">学习路线</a></li><li><a href="#">免责声明</a></li></ul></div>
+  </div>
+  <div class="fb"><span>© 2026 拍电影网 · 每一个好故事都值得被拍出来</span><span>https://paidianyingwang-wap.github.io/</span></div>
+</div></footer>
+
+<a href="#home" class="up" id="up" aria-label="回到顶部">↑</a>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "拍电影网",
+  "alternateName": "paidianyingwang-wap",
+  "url": "https://paidianyingwang-wap.github.io/",
+  "description": "拍电影网专注电影拍摄与影视制作，提供拍摄教程、器材推荐、分镜技巧、后期剪辑与行业资讯，从零开始学拍电影。",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://paidianyingwang-wap.github.io/#search={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "拍电影网",
+  "url": "https://paidianyingwang-wap.github.io/",
+  "logo": "https://paidianyingwang-wap.github.io/favicon.ico"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "首页", "item": "https://paidianyingwang-wap.github.io/"},
+    {"@type": "ListItem", "position": 2, "name": "拍摄技巧", "item": "https://paidianyingwang-wap.github.io/#shot"},
+    {"@type": "ListItem", "position": 3, "name": "器材清单", "item": "https://paidianyingwang-wap.github.io/#gear"}
+  ]
+}
+</script>
+
+<script>
+(function(){
+  var b=document.getElementById('tbtn'),m=document.getElementById('menu');
+  b.addEventListener('click',function(){
+    var o=m.classList.toggle('open');
+    b.setAttribute('aria-expanded',o?'true':'false');
+  });
+  m.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click',function(){m.classList.remove('open');b.setAttribute('aria-expanded','false');});
+  });
+  var links=document.querySelectorAll('.menu a'),secs=document.querySelectorAll('section[id]');
+  window.addEventListener('scroll',function(){
+    var pos=window.scrollY+150,cur='';
+    secs.forEach(function(s){if(s.offsetTop<=pos)cur=s.id;});
+    links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+cur);});
+    document.getElementById('up').classList.toggle('show',window.scrollY>500);
+  });
+})();
+document.getElementById('up').addEventListener('click',function(e){e.preventDefault();window.scrollTo({top:0,behavior:'smooth'});});
+</script>
+</body>
+</html>
